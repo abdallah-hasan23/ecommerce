@@ -12,4 +12,22 @@ document.querySelectorAll('.add-to-cart-btn').forEach(item => {
     })
 })
 
-console.log("helllo")
+document.querySelectorAll('.size-option input[type="radio"]').forEach(item =>{
+    item.addEventListener('change',() => {
+        document.querySelectorAll('.size-option').forEach(i =>{
+            i.classList.remove('active')
+        })
+        item.parentNode.parentNode.classList.add('active')
+    })
+})
+document.querySelectorAll('.color-option input[type="radio"]').forEach(item =>{
+    item.addEventListener('change',() => {
+        document.querySelectorAll('.color-option').forEach(i =>{
+            i.classList.remove('active')
+        })
+        item.parentNode.parentNode.classList.add('active')
+    })
+})
+
+document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
+
