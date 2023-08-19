@@ -217,8 +217,8 @@ body {
 .overlay {
     position: absolute;
     background-color: rgba(83, 204, 215, 0.5);
-    height: 250px;
-    width: calc(100% - 16px);
+    height: 306px;
+    width: calc(100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -807,6 +807,11 @@ h1.custom-heading {
  }
 
  @media (max-width: 767.98px) {
+    #custom-thumbnail img{
+      max-width: 250px;
+      max-height: 250px;
+      width: 100%; 
+    }
 
     #carousel-featured {
         padding-bottom: 25px;
