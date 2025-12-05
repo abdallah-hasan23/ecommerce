@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 
@@ -7,4 +8,15 @@ $theme-colors: (
     "warning": $warning
 );
 
+=======
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+$warning : #ffc107;
+
+$theme-colors: (
+    "warning": $warning
+);
+
+>>>>>>> 49888e3 (update website)
 $input-btn-padding-y: 0.575rem;
